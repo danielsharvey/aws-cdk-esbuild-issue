@@ -1,3 +1,10 @@
+# NOTICE
+
+This was created to troubleshoot a bug in esbuild innvocation in the AWS CDK.
+
+It can be deleted including the github repo.
+
+Daniel
 
 
 # Test
