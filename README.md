@@ -4,6 +4,18 @@ This was created to troubleshoot a bug in esbuild innvocation in the AWS CDK.
 
 It can be deleted including the github repo.
 
+`fix(build): Add npm dependency to fix esbuild (npx) issue`
+```
+esbuild is exec'ed by the CDK deployment using npx, which had a bug
+on Windows which did not correctly escape exec parameters.
+
+Add explicit npm dev dependency to project to ensure a recent
+enough npm/npx version is utilised.
+```
+
+See https://github.com/npm/cli/issues/2425
+and https://github.com/npm/cli/issues/2423#issuecomment-764964676
+
 Daniel
 
 
